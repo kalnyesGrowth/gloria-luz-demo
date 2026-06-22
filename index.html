@@ -8,8 +8,10 @@
 <meta property="og:title" content="Gloria Luz Market Y Restaurante | Stafford, VA">
 <meta property="og:description" content="Salvadoran restaurant and Latin American market. Fresh pupusas, carne asada, tamales, and more. Order online for delivery.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://kalnyesgrowth.github.io/gloria-luz-demo/">
+<meta property="og:image" content="https://kalnyesgrowth.github.io/gloria-luz-demo/poster.jpg">
 <link rel="canonical" href="https://kalnyesgrowth.github.io/gloria-luz-demo/">
-<link rel="preconnect" href="https://fonts.bunny.net">
+<link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
 <link href="https://fonts.bunny.net/css2?family=fraunces:ital,wght@0,400;0,600;0,700;0,800;1,400&family=nunito-sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -208,6 +210,7 @@ footer{background:var(--bg);border-top:1px solid var(--white-10);padding:60px 5%
 .mobile-sticky .sticky-dir{background:transparent;border:1.5px solid var(--white-30);color:var(--white)}
 .mobile-sticky svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2}
 
+a:focus-visible,button:focus-visible{outline:2px solid var(--primary);outline-offset:3px}
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
 .reveal.visible{opacity:1;transform:translateY(0)}
 
@@ -245,7 +248,7 @@ footer{background:var(--bg);border-top:1px solid var(--white-10);padding:60px 5%
   "@type":"Restaurant",
   "name":"Gloria Luz Market Y Restaurante",
   "servesCuisine":["Salvadoran","Latin American","Mexican"],
-  "image":"poster.jpg",
+  "image":"https://kalnyesgrowth.github.io/gloria-luz-demo/poster.jpg",
   "address":{"@type":"PostalAddress","streetAddress":"432 Garrisonville Rd #111","addressLocality":"Stafford","addressRegion":"VA","postalCode":"22554","addressCountry":"US"},
   "telephone":"+15406575500",
   "url":"https://kalnyesgrowth.github.io/gloria-luz-demo/",
@@ -278,7 +281,7 @@ footer{background:var(--bg);border-top:1px solid var(--white-10);padding:60px 5%
 
 <section class="hero" id="hero">
   <div class="hero-video-wrap">
-    <canvas id="heroCanvas"></canvas>
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
     <video id="heroVideo" muted autoplay loop playsinline webkit-playsinline preload="auto" style="position:absolute;width:1px;height:1px;opacity:0;pointer-events:none"></video>
   </div>
   <div class="hero-overlay"></div>
@@ -296,28 +299,28 @@ footer{background:var(--bg);border-top:1px solid var(--white-10);padding:60px 5%
   <p class="section-desc reveal">Our kitchen brings the flavors of El Salvador and Central America to every plate. These are the dishes our customers keep coming back for.</p>
   <div class="sig-grid">
     <div class="sig-card reveal">
-      <img src="https://images.pexels.com/photos/33490827/pexels-photo-33490827.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Pupusas Revueltas" loading="lazy">
+      <img src="https://images.pexels.com/photos/33490827/pexels-photo-33490827.jpeg?auto=compress&cs=tinysrgb&w=800" srcset="https://images.pexels.com/photos/33490827/pexels-photo-33490827.jpeg?auto=compress&cs=tinysrgb&w=400 400w,https://images.pexels.com/photos/33490827/pexels-photo-33490827.jpeg?auto=compress&cs=tinysrgb&w=800 800w" sizes="(max-width:768px) 50vw, 25vw" alt="Pupusas Revueltas" loading="lazy">
       <div class="sig-card-overlay">
         <div class="sig-card-name">Pupusas Revueltas</div>
         <div class="sig-card-price">$2.99 each</div>
       </div>
     </div>
     <div class="sig-card reveal">
-      <img src="https://images.pexels.com/photos/8364557/pexels-photo-8364557.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Carne Asada" loading="lazy">
+      <img src="https://images.pexels.com/photos/8364557/pexels-photo-8364557.jpeg?auto=compress&cs=tinysrgb&w=800" srcset="https://images.pexels.com/photos/8364557/pexels-photo-8364557.jpeg?auto=compress&cs=tinysrgb&w=400 400w,https://images.pexels.com/photos/8364557/pexels-photo-8364557.jpeg?auto=compress&cs=tinysrgb&w=800 800w" sizes="(max-width:768px) 50vw, 25vw" alt="Carne Asada" loading="lazy">
       <div class="sig-card-overlay">
         <div class="sig-card-name">Carne Asada</div>
         <div class="sig-card-price">$16.99</div>
       </div>
     </div>
     <div class="sig-card reveal">
-      <img src="https://images.pexels.com/photos/34822475/pexels-photo-34822475.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sopa de Res" loading="lazy">
+      <img src="https://images.pexels.com/photos/34822475/pexels-photo-34822475.jpeg?auto=compress&cs=tinysrgb&w=800" srcset="https://images.pexels.com/photos/34822475/pexels-photo-34822475.jpeg?auto=compress&cs=tinysrgb&w=400 400w,https://images.pexels.com/photos/34822475/pexels-photo-34822475.jpeg?auto=compress&cs=tinysrgb&w=800 800w" sizes="(max-width:768px) 50vw, 25vw" alt="Sopa de Res" loading="lazy">
       <div class="sig-card-overlay">
         <div class="sig-card-name">Sopa de Res</div>
         <div class="sig-card-price">$15.99</div>
       </div>
     </div>
     <div class="sig-card reveal">
-      <img src="https://images.pexels.com/photos/19841843/pexels-photo-19841843.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mojarra Frita" loading="lazy">
+      <img src="https://images.pexels.com/photos/19841843/pexels-photo-19841843.jpeg?auto=compress&cs=tinysrgb&w=800" srcset="https://images.pexels.com/photos/19841843/pexels-photo-19841843.jpeg?auto=compress&cs=tinysrgb&w=400 400w,https://images.pexels.com/photos/19841843/pexels-photo-19841843.jpeg?auto=compress&cs=tinysrgb&w=800 800w" sizes="(max-width:768px) 50vw, 25vw" alt="Mojarra Frita" loading="lazy">
       <div class="sig-card-overlay">
         <div class="sig-card-name">Mojarra Frita</div>
         <div class="sig-card-price">$17.99</div>
@@ -401,7 +404,7 @@ footer{background:var(--bg);border-top:1px solid var(--white-10);padding:60px 5%
 <section class="section" id="mercado">
   <div class="market-grid">
     <div class="market-img reveal">
-      <img src="https://images.pexels.com/photos/5498216/pexels-photo-5498216.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Gloria Luz Market grocery aisle" loading="lazy">
+      <img src="https://images.pexels.com/photos/5498216/pexels-photo-5498216.jpeg?auto=compress&cs=tinysrgb&w=800" srcset="https://images.pexels.com/photos/5498216/pexels-photo-5498216.jpeg?auto=compress&cs=tinysrgb&w=400 400w,https://images.pexels.com/photos/5498216/pexels-photo-5498216.jpeg?auto=compress&cs=tinysrgb&w=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Gloria Luz Market grocery aisle" loading="lazy">
     </div>
     <div class="reveal">
       <div class="section-label">Our Market</div>
@@ -441,7 +444,7 @@ footer{background:var(--bg);border-top:1px solid var(--white-10);padding:60px 5%
       </div>
     </div>
     <div class="about-img reveal">
-      <img src="https://images.pexels.com/photos/30005123/pexels-photo-30005123.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fresh Latin American cuisine" loading="lazy">
+      <img src="https://images.pexels.com/photos/30005123/pexels-photo-30005123.jpeg?auto=compress&cs=tinysrgb&w=800" srcset="https://images.pexels.com/photos/30005123/pexels-photo-30005123.jpeg?auto=compress&cs=tinysrgb&w=400 400w,https://images.pexels.com/photos/30005123/pexels-photo-30005123.jpeg?auto=compress&cs=tinysrgb&w=800 800w" sizes="(max-width:768px) 100vw, 50vw" alt="Fresh Latin American cuisine" loading="lazy">
     </div>
   </div>
 </section>
@@ -677,7 +680,12 @@ footer{background:var(--bg);border-top:1px solid var(--white-10);padding:60px 5%
     canvas.height=window.innerHeight;
   }
   resizeCanvas();
-  window.addEventListener('resize',resizeCanvas);
+  let lastBreakpoint=window.innerWidth<768?'mobile':'desktop';
+  window.addEventListener('resize',function(){
+    resizeCanvas();
+    const bp=window.innerWidth<768?'mobile':'desktop';
+    if(bp!==lastBreakpoint){lastBreakpoint=bp;setVideoSrc();video.load();video.play().catch(function(){});}
+  });
   function drawFrame(){
     if(video.readyState>=2){
       const vw=video.videoWidth,vh=video.videoHeight;
